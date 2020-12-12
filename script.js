@@ -114,7 +114,9 @@ document.body.appendChild(button4);
 button4.innerHTML = 'Input Tag';
 
 
+
 // document.getElementById(id).onclick = function(){code}
+//shoadow hover va onclick bo'lganda rangi shadowi ba boshqa joylari ko'rinishi o'zgaradi.
 document.getElementById('shadowww').onclick = function () {
     document.getElementById('shadowww').style.boxShadow = '0px 0px 15px 2px dodgerblue';
     document.getElementById('shadowww').style.background = 'rgba(30, 143, 255, 0.110)';
@@ -136,6 +138,7 @@ document.getElementById('shadoww').onmouseout = function () {
 document.getElementById('shadow').onclick = function () {
     document.getElementById('shadow').style.boxShadow = '0px 0px 15px 2px dodgerblue';
     document.getElementById('shadow').style.background = 'rgba(30, 143, 255, 0.110)';
+
 }
 document.getElementById('shadow').onmouseout = function () {
     document.getElementById('shadow').style.boxShadow = '0 0 0 0  white';
