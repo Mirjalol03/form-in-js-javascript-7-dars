@@ -24,6 +24,8 @@ input1.value = "https://";
 input1.style.fontSize = '22px';
 input1.style.marginTop = '10px';
 input1.style.margin = '10px';
+input1.id = "shadow";
+input1.style.transition = '1s';
 document.body.appendChild(input1);
 
 let ikkinchiInputName = document.createElement('span');
@@ -39,7 +41,9 @@ let input2 = document.createElement('input');
 input2.type = "email";
 input2.placeholder = "name@example.com"
 input2.style.fontSize = '22px';
-input2.style.position = 'relative'
+input2.style.position = 'relative';
+input2.id = "shadoww"
+input2.style.transition = '1s';
 // input2.style.textAlign = 'center'
 input2.style.right = '50px';
 input2.style.top = '-42px';
@@ -59,9 +63,11 @@ let input3 = document.createElement('input');
 input3.type = "password";
 input3.style.fontSize = '22px';
 input3.style.float = 'right';
-input3.style.position = 'relative'
-input3.style.right = '-70px'
-input3.style.top = '-43px'
+input3.style.position = 'relative';
+input3.id = "shadowww";
+input3.style.transition = "1s";
+input3.style.right = '-70px';
+input3.style.top = '-43px';
 input3.placeholder = "joohndoe2102"
 document.body.appendChild(input3);
 
@@ -106,3 +112,32 @@ button4.style.top = "10px";
 // button4.style.position = "fixed";
 document.body.appendChild(button4);
 button4.innerHTML = 'Input Tag';
+
+
+// document.getElementById(id).onclick = function(){code}
+document.getElementById('shadowww').onclick = function () {
+    document.getElementById('shadowww').style.boxShadow = '0px 0px 15px 2px dodgerblue';
+    document.getElementById('shadowww').style.background = 'rgba(30, 143, 255, 0.110)';
+}
+document.getElementById('shadowww').onmouseout = function () {
+    document.getElementById('shadowww').style.boxShadow = '0 0 0 0  white';
+    document.getElementById('shadowww').style.background = 'white';
+}
+
+document.getElementById('shadoww').onclick = function () {
+    document.getElementById('shadoww').style.boxShadow = '0px 0px 15px 2px dodgerblue';
+    document.getElementById('shadoww').style.background = 'rgba(30, 143, 255, 0.110)';
+}
+document.getElementById('shadoww').onmouseout = function () {
+    document.getElementById('shadoww').style.boxShadow = '0 0 0 0  white';
+    document.getElementById('shadoww').style.background = 'white';
+}
+
+document.getElementById('shadow').onclick = function () {
+    document.getElementById('shadow').style.boxShadow = '0px 0px 15px 2px dodgerblue';
+    document.getElementById('shadow').style.background = 'rgba(30, 143, 255, 0.110)';
+}
+document.getElementById('shadow').onmouseout = function () {
+    document.getElementById('shadow').style.boxShadow = '0 0 0 0  white';
+    document.getElementById('shadow').style.background = 'white';
+}
